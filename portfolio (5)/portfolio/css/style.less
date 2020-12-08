@@ -4,26 +4,25 @@
 @desktop: ~"(min-width: 1200px)";
 
 @primary_color: #6d4c41;
-@dark:#40241a;
-@light: #9c786c ;
-*{
+@dark: #40241a;
+@light: #9c786c;
+* {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-};
+}
 html {
   box-sizing: border-box;
 }
 
 body {
   box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   font-family: "Lato", sans-serif;
-  background-color:@light;
-  
+  background-color: @light;
 }
 
 header {
@@ -32,7 +31,7 @@ header {
   align-items: center;
   position: fixed;
   top: 0;
-  background: @dark;
+  background: url(nav_wood.jpg);
   z-index: 1;
   #logo {
     display: flex;
@@ -54,6 +53,7 @@ header {
   nav {
     width: 100%;
     margin-right: 20px;
+
     .icon-menu {
       display: none;
     }
@@ -98,8 +98,8 @@ header {
         right: 0;
         top: 100px;
         height: calc(100vh - 100px);
-        background:@primary_color;
-        color: @dark;
+        background: url(drewno.jpg);
+        color: #fff;
         flex-flow: column;
         transform: translateX(50vw);
         align-items: flex-start;
@@ -113,7 +113,7 @@ header {
           width: 100%;
           &:hover {
             opacity: 0.8;
-            background:@light;
+            background: @light;
           }
         }
         p {
@@ -134,6 +134,8 @@ header {
     @media @mobile {
       ul.open {
         transform: translateX(0) !important;
+        min-width: fit-content;
+        max-width: fit-content;
       }
     }
   }
@@ -142,8 +144,8 @@ header {
 #container {
   color: #fff;
   margin-top: 100px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 0;
+  margin-right: 0;
 
   background: url(resize.png);
 
@@ -178,6 +180,7 @@ header {
       padding: 14px 28px;
       font-weight: bold;
       font-size: 16px;
+      margin-top: 15px;
       cursor: pointer;
       text-align: center;
       &:hover {
@@ -217,13 +220,11 @@ header {
       justify-content: center;
       grid-column-gap: 15vh;
       color: @primary_color;
-      
+
       .h3 {
         font-size: 50px;
         font-weight: 700;
         color: @dark;
-
-        
       }
 
       .section_list {
@@ -292,9 +293,9 @@ header {
       & > div {
         padding: 10px;
       }
-      .projects-icon{
-          color: @dark;
-        }
+      .projects-icon {
+        color: @dark;
+      }
     }
     .section_header {
       height: calc(100vh - 100px);
@@ -329,10 +330,10 @@ header {
         padding: 0;
         color: @dark;
       }
-      .projects-titles{
+      .projects-titles {
         font-size: 40px;
         color: @dark;
-      font-weight: 700;
+        font-weight: 700;
       }
       @media @mobile {
         & > span {
@@ -367,8 +368,8 @@ header {
       font-size: 15px;
       color: @dark;
     }
-    .icon-git-squared{
-      &:hover{
+    .icon-git-squared {
+      &:hover {
         color: @light;
       }
     }

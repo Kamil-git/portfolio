@@ -10,8 +10,8 @@ html {
 }
 body {
   box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   font-family: "Lato", sans-serif;
   background-color: #9c786c;
 }
@@ -21,7 +21,7 @@ header {
   align-items: center;
   position: fixed;
   top: 0;
-  background: #40241a;
+  background: url(nav_wood.jpg);
   z-index: 1;
 }
 header #logo {
@@ -89,8 +89,8 @@ header nav ul p {
     right: 0;
     top: 100px;
     height: calc(100vh - 100px);
-    background: #6d4c41;
-    color: #40241a;
+    background: url(drewno.jpg);
+    color: #fff;
     flex-flow: column;
     transform: translateX(50vw);
     align-items: flex-start;
@@ -122,13 +122,15 @@ header nav ul li:hover {
 @media (max-width: 757px) {
   header nav ul.open {
     transform: translateX(0) !important;
+    min-width: fit-content;
+    max-width: fit-content;
   }
 }
 #container {
   color: #fff;
   margin-top: 100px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 0;
+  margin-right: 0;
   background: url(resize.png);
 }
 #container .section1 {
@@ -161,6 +163,7 @@ header nav ul li:hover {
   padding: 14px 28px;
   font-weight: bold;
   font-size: 16px;
+  margin-top: 15px;
   cursor: pointer;
   text-align: center;
 }
