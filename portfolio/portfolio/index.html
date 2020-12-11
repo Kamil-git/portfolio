@@ -25,7 +25,7 @@
     
     <header>
        
-        <div id="logo"><span><em><stron><mark>Portfolio.</mark></strong></em></span></div>
+        <div id="logo"><span><em><strong>Portfolio.</strong></em></span></div>
         <nav>
             <i class="icon-menu"></i>
             <ul id="menu_nav">
@@ -36,6 +36,11 @@
                 <li><p>&#10153;</p>Kontakty</li>
             </ul>
         </nav>
+        <div class="scroll-indicator">
+ 
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
     </header>
     <div id="container">
         <!-- strona główna -->
@@ -171,6 +176,30 @@
         </div>
     </div>
     <!-- Kontakt -->
+    <div class="section5">
+        <form action="js/mailer.js">
+            
+    <label for="fname"><strong>Imię</strong></label>
+    <input type="text" id="fname" name="firstname" placeholder="Twoje Imię..">
+
+    <label for="lname"><Strong>Nazwisko</Strong></label>
+    <input type="text" id="lname" name="lastname" placeholder="Twoje Naziwsko..">
+
+    <label for="country"><strong>Kraj</strong></label>
+    <select id="country" name="Kraj">
+      <option value="australia">Polska</option>
+      <option value="canada">Niemcy</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject"><strong>Temat</strong></label>
+    <textarea id="subject" name="subject" placeholder="Wiadomość..." style="height:200px"></textarea>
+
+    <div style="text-align: center;"><input type="submit" value=Wyślij></div>
+
+        </form>
+    </div>
+    
     <footer>
         <div class="section_footer">
             <span><strong>Kamil Kwiatkowski</strong> , Front-End Web Developer</span>
@@ -184,6 +213,16 @@
    
    </div>
     <script type="text/javascript" src="js/script.js"></script> 
+    <script>    
+    window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
 </body>
 
 </html>
