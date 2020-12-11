@@ -397,6 +397,7 @@ header nav ul li:hover {
   color: #40241a;
   margin: 10px;
   font-size: 25px;
+  border-color: #9c786c;
 }
 #container #section5 input[type="text"],
 #container #section5 select,
@@ -409,11 +410,10 @@ header nav ul li:hover {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-  background: #9c786c;
   cursor: pointer;
 }
 #container #section5 ::placeholder {
-  color: #6d4c41;
+  color: black;
 }
 #container #section5 input[type="submit"] {
   background-color: #40241a;
