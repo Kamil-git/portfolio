@@ -29,11 +29,11 @@
         <nav>
             <i class="icon-menu"></i>
             <ul id="menu_nav">
-               <li><p>&#10153;</p>Home</li>
-                <li><p>&#10153;</p>O mnie</li>
-                <li><p>&#10153;</p>Usługi</li>
-                <li><p>&#10153;</p>Projekty</li>
-                <li><p>&#10153;</p>Kontakty</li>
+               <li><p>&#10153;</p><a class="scroll" href="#section1">Home</a></li>
+                <li><p>&#10153;</p><a class="scroll" href="#section2">O mnie</a></li>
+                <li><p>&#10153;</p><a class="scroll" href="#section3">Usługi</a></li>
+                <li><p>&#10153;</p><a class="scroll" href="#section4">Projekty</a></li>
+                <li><p>&#10153;</p><a class="scroll" href="#section5">Kontakt</a></li>
             </ul>
         </nav>
         <div class="scroll-indicator">
@@ -44,17 +44,18 @@
     </header>
     <div id="container">
         <!-- strona główna -->
-        <div class="section1">
+
+        <div id="section1">
             <h1><span>Front-End Web Developer</span></h1>
             <h2><span>Kamil Kwiatkowski<br></h2>
             <button type="button" class="block">Zobacz co umiem</button>
             
         </div>
         <!-- O mnie -->
-    <div class="section2">
+    <div id="section2">
         <div class="section_header">
                 <div class="small"><small>Kilka słów o mnie</small></div>
-                <div class="big"><span>Kamil Kwiatkowski Front-End Developer</span></div>
+                <div class="big"><span>Kamil Kwiatkowski</span></div>
                 <div class="small"><p>Jestem początkującym Front-End Developerem i szukam pierwszej pracy. 
                     <br>Interesuje się trendami z zakresu projektowania stron www , sklepów internetowych , blogów <br>
                 <small>-Kamil Kwiatkowski</small> </p> <br></div>
@@ -68,8 +69,7 @@
                         <li>Html</li>
                         <li>CSS</li>
                         <li>Bootstrap</li>
-                        <li>React</li>
-                        <li>Angular</li>
+                        
                     </ul>
                 </div>
                 <div class="section_list1">
@@ -79,15 +79,14 @@
                         <li>JAVA</li>
                         <li>SEO</li>
                         <li>JIRA</li>
-                        <li>.NET CORE</li>
-                        
+                       
+                 
                     </ul>
                 </div>
                 <div class="section_list2">
                     <p class="h3">Oprogramowanie</p>
                     <ul>
                         <li>Visual Studio</li>
-                        <li>Paint</li>
                         <li>Intelij</li>
                         <li>Linux Ubuntu</li>
                         
@@ -105,7 +104,7 @@
     </div>
 
         <!-- Usługi -->
-        <div class="section3">
+        <div id="section3">
             <div class="section_header">
                <div class="be4title"> Zobacz moje
                    </div>
@@ -161,8 +160,9 @@
                 </div>
             </div>
         </div>
+        </div>
         <!-- Portfolio -->
-        <div class="section4">
+        <div id="section4">
             <div class="section_header">
                 <div class="be4title">Zobacz moje</div>
                 <span>Projekty | <strong>Portfolio</strong><i class="icon-git-squared"></i></span>               
@@ -174,9 +174,9 @@
                     <div></div>
             </div>
         </div>
-    </div>
+    
     <!-- Kontakt -->
-    <div class="section5">
+    <div id="section5">
         <form action="js/mailer.js">
             
     <label for="fname"><strong>Imię</strong></label>
@@ -213,16 +213,10 @@
    
    </div>
     <script type="text/javascript" src="js/script.js"></script> 
-    <script>    
-    window.onscroll = function() {myFunction()};
+    <script src = /js/scoll.js></script>
+    <script src = /js/script2.js> </script>
 
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-}
-</script>
+
 </body>
 
 </html>

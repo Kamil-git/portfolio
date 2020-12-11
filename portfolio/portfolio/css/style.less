@@ -73,6 +73,7 @@ header {
     width: 100%;
     margin-right: 20px;
 
+
     mark {
       background: rgb(202, 175, 115);
     }
@@ -114,7 +115,10 @@ header {
       p {
         display: none;
       }
-
+         a:link{
+  text-decoration: none;
+  color:@dark
+}
       @media @mobile {
         position: fixed;
         width: 50vw;
@@ -143,6 +147,10 @@ header {
           display: inline;
           margin-right: 8px;
         }
+                 a:link{
+  text-decoration: none;
+  color:#fff;
+}
       }
 
       li {
@@ -190,7 +198,7 @@ header {
 
   background: url(resize.png);
 
-  .section1 {
+  #section1 {
     height: calc(100vh - 100px);
     display: flex;
     flex-flow: column nowrap;
@@ -244,7 +252,7 @@ header {
       }
     }
   }
-  .section2 {
+  #section2 {
     .section_header {
       height: calc(100vh - 100px);
       display: flex;
@@ -316,7 +324,7 @@ header {
       text-align: center;
     }
   }
-  .section3 {
+  #section3 {
     .icon-git-squared {
       display: inline-block;
       position: absolute;
@@ -383,7 +391,7 @@ header {
       }
     }
   }
-  .section4 {
+  #section4 {
     height: calc(100vh - 100px);
     display: flex;
     flex-flow: column;
@@ -399,23 +407,24 @@ header {
       color: @dark;
     }
     .be4title {
-      display: inline-block;
+      text-align: center;
       position: relative;
       font-family: "Lato", sans-serif;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 400;
       letter-spacing: 0.65em;
       margin-right: -0.65em;
-      font-size: 15px;
+      font-size: 10px;
       color: @dark;
     }
     .icon-git-squared {
       &:hover {
         color: @light;
+        cursor: pointer;
       }
     }
   }
-  .section5 {
+  #section5 {
     height: calc(100vh - 100px);
     display: flex;
     flex-flow: column;

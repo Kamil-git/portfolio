@@ -102,6 +102,10 @@ header nav ul {
 header nav ul p {
   display: none;
 }
+header nav ul a:link {
+  text-decoration: none;
+  color: #40241a;
+}
 @media (max-width: 757px) {
   header nav ul {
     position: fixed;
@@ -130,6 +134,10 @@ header nav ul p {
   header nav ul p {
     display: inline;
     margin-right: 8px;
+  }
+  header nav ul a:link {
+    text-decoration: none;
+    color: #fff;
   }
 }
 header nav ul li {
@@ -169,7 +177,7 @@ header nav ul li:hover {
   margin-right: 0;
   background: url(resize.png);
 }
-#container .section1 {
+#container #section1 {
   height: calc(100vh - 100px);
   display: flex;
   flex-flow: column nowrap;
@@ -177,19 +185,19 @@ header nav ul li:hover {
   justify-content: center;
   color: #9c786c;
 }
-#container .section1 h1 {
+#container #section1 h1 {
   margin: 0;
   font-size: 120px;
   text-align: center;
   color: #40241a;
 }
-#container .section1 h2 {
+#container #section1 h2 {
   font-size: 60px;
   padding: 5px;
   text-align: center;
   color: #40241a;
 }
-#container .section1 .block {
+#container #section1 .block {
   display: flex;
   width: 200px;
   align-items: center;
@@ -203,25 +211,25 @@ header nav ul li:hover {
   cursor: pointer;
   text-align: center;
 }
-#container .section1 .block:hover {
+#container #section1 .block:hover {
   opacity: 0.5;
   color: #fff;
 }
 @media (max-width: 757px) {
-  #container .section1 h1 {
+  #container #section1 h1 {
     margin: 0;
     font-size: 60px;
     text-align: center;
     color: #40241a;
   }
-  #container .section1 h2 {
+  #container #section1 h2 {
     font-size: 30px;
     padding: 5px;
     text-align: center;
     color: #40241a;
   }
 }
-#container .section2 .section_header {
+#container #section2 .section_header {
   height: calc(100vh - 100px);
   display: flex;
   flex-flow: column;
@@ -229,7 +237,7 @@ header nav ul li:hover {
   color: #6d4c41;
   font-weight: 700;
 }
-#container .section2 .myskills {
+#container #section2 .myskills {
   height: calc(100vh - 100px);
   font-size: 20px;
   display: grid;
@@ -237,83 +245,83 @@ header nav ul li:hover {
   grid-column-gap: 15vh;
   color: #6d4c41;
 }
-#container .section2 .myskills .h3 {
+#container #section2 .myskills .h3 {
   font-size: 50px;
   font-weight: 700;
   color: #40241a;
 }
-#container .section2 .myskills .section_list {
+#container #section2 .myskills .section_list {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
 }
-#container .section2 .myskills .section_list1 {
+#container #section2 .myskills .section_list1 {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
 }
-#container .section2 .myskills .section_list2 {
+#container #section2 .myskills .section_list2 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
 }
-#container .section2 .myskills .section_list3 {
+#container #section2 .myskills .section_list3 {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 @media (max-width: 757px) {
-  #container .section2 .myskills {
+  #container #section2 .myskills {
     display: flex;
     flex-flow: column;
     font-size: 15px;
     margin: 10px;
   }
 }
-#container .section2 .big {
+#container #section2 .big {
   font-size: 50px;
   color: #40241a;
   display: block;
   text-align: center;
 }
-#container .section2 .small {
+#container #section2 .small {
   font-size: 25px;
   display: block;
   text-align: center;
 }
-#container .section3 .icon-git-squared {
+#container #section3 .icon-git-squared {
   display: inline-block;
   position: absolute;
   margin-right: 0;
   margin-bottom: -3px;
 }
-#container .section3 .icon-git-squared:hover {
+#container #section3 .icon-git-squared:hover {
   color: #40241a;
   cursor: pointer;
 }
-#container .section3 .services {
+#container #section3 .services {
   color: #6d4c41;
   font-weight: 700;
   box-shadow: 3px 3px #40241a;
 }
-#container .section3 .services > div {
+#container #section3 .services > div {
   padding: 10px;
 }
-#container .section3 .services .projects-icon {
+#container #section3 .services .projects-icon {
   color: #40241a;
 }
-#container .section3 .section_header {
+#container #section3 .section_header {
   height: calc(100vh - 100px);
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
-#container .section3 .section_header .be4title {
+#container #section3 .section_header .be4title {
   display: inline-block;
   position: relative;
   font-family: "Lato", sans-serif;
@@ -324,10 +332,10 @@ header nav ul li:hover {
   font-size: 8px;
   color: #6d4c41;
 }
-#container .section3 .section_header .be4title .span {
+#container #section3 .section_header .be4title .span {
   position: relative;
 }
-#container .section3 .section_header .title {
+#container #section3 .section_header .title {
   display: inline-block;
   font-family: "Lato", sans-serif;
   text-transform: capitalize;
@@ -339,24 +347,24 @@ header nav ul li:hover {
   padding: 0;
   color: #40241a;
 }
-#container .section3 .section_header .projects-titles {
+#container #section3 .section_header .projects-titles {
   font-size: 40px;
   color: #40241a;
   font-weight: 700;
 }
 @media (max-width: 757px) {
-  #container .section3 .section_header > span {
+  #container #section3 .section_header > span {
     font-size: 25px;
   }
 }
-#container .section4 {
+#container #section4 {
   height: calc(100vh - 100px);
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
-#container .section4 .section_header {
+#container #section4 .section_header {
   text-transform: capitalize;
   letter-spacing: 0;
   line-height: 1.4;
@@ -365,21 +373,22 @@ header nav ul li:hover {
   margin-top: 0;
   color: #40241a;
 }
-#container .section4 .be4title {
-  display: inline-block;
+#container #section4 .be4title {
+  text-align: center;
   position: relative;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.65em;
   margin-right: -0.65em;
-  font-size: 15px;
+  font-size: 10px;
   color: #40241a;
 }
-#container .section4 .icon-git-squared:hover {
+#container #section4 .icon-git-squared:hover {
   color: #9c786c;
+  cursor: pointer;
 }
-#container .section5 {
+#container #section5 {
   height: calc(100vh - 100px);
   display: flex;
   flex-flow: column;
@@ -389,9 +398,9 @@ header nav ul li:hover {
   margin: 10px;
   font-size: 25px;
 }
-#container .section5 input[type="text"],
-#container .section5 select,
-#container .section5 textarea {
+#container #section5 input[type="text"],
+#container #section5 select,
+#container #section5 textarea {
   width: 100%;
   padding: 12px;
   color: #40241a;
@@ -403,10 +412,10 @@ header nav ul li:hover {
   background: #9c786c;
   cursor: pointer;
 }
-#container .section5 ::placeholder {
+#container #section5 ::placeholder {
   color: #6d4c41;
 }
-#container .section5 input[type="submit"] {
+#container #section5 input[type="submit"] {
   background-color: #40241a;
   color: #9c786c;
   padding: 12px 20px;
@@ -415,10 +424,10 @@ header nav ul li:hover {
   cursor: pointer;
   font-weight: 700;
 }
-#container .section5 input[type="submit"]:hover {
+#container #section5 input[type="submit"]:hover {
   opacity: 0.6;
 }
-#container .section5 .container {
+#container #section5 .container {
   border-radius: 5px;
   padding: 20px;
 }
