@@ -49,8 +49,6 @@ header {
   background: url(nav_wood.jpg);
   z-index: 1;
 
- 
-
   #logo {
     display: flex;
     justify-content: left;
@@ -72,7 +70,6 @@ header {
   nav {
     width: 100%;
     margin-right: 20px;
-
 
     mark {
       background: rgb(202, 175, 115);
@@ -101,8 +98,6 @@ header {
       }
     }
 
-    
-  
     ul {
       list-style-type: none;
       display: flex;
@@ -119,10 +114,10 @@ header {
       p {
         display: none;
       }
-         a:link{
-  text-decoration: none;
-  color:@dark
-}
+      a:link {
+        text-decoration: none;
+        color: @dark;
+      }
       @media @mobile {
         position: fixed;
         width: 50vw;
@@ -151,10 +146,10 @@ header {
           display: inline;
           margin-right: 8px;
         }
-                 a:link{
-  text-decoration: none;
-  color:#fff;
-}
+        a:link {
+          text-decoration: none;
+          color: #fff;
+        }
       }
 
       li {
@@ -166,12 +161,12 @@ header {
         }
       }
       @media @tablet {
-      font-size: 20px;
+        font-size: 20px;
+      }
+      @media @laptop {
+        font-size: 25px;
+      }
     }
-    @media @laptop{
-    font-size:25px;
-    }
-  }
     @media @mobile {
       ul.open {
         transform: translateX(0) !important;
@@ -271,7 +266,7 @@ header {
       color: @primary_color;
       font-weight: 700;
     }
-
+    
     .myskills {
       height: calc(100vh - 100px);
       font-size: 20px;
@@ -285,32 +280,34 @@ header {
         font-weight: 700;
         color: @dark;
       }
-
-      .section_list {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
+      
+        .section_list {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+        .section_list1 {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+        .section_list2 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+        .section_list3 {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
       }
-      .section_list1 {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-      }
-      .section_list2 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-      }
-      .section_list3 {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-      }
-    }
+      
+    
     .myskills {
       @media @mobile {
         display: flex;
@@ -319,16 +316,56 @@ header {
         margin: 10px;
       }
 
-      @media @tablet{
-      display: flex;
-      flex-flow: column;
-      font-size: 25px;
-      margin: 10px;
+      @media @tablet {
+        display: flex;
+        flex-flow: column;
+        font-size: 25px;
+        margin: 10px;
         text-align: center;
         justify-content: center;
+      }
+      
+      @media @laptop{
+         height: calc(100vh - 100px);
+      font-size: 20px;
+      display: grid;
+      justify-content: center;
+      grid-column-gap: 15vh;
+      color: @primary_color;
+
+      .h3 {
+        font-size: 50px;
+        font-weight: 700;
+        color: @dark;
+      }
+      
+        .section_list {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+        .section_list1 {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+        .section_list2 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+        .section_list3 {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+      }
+
     }
-    }
-    
 
     .big {
       font-size: 50px;
@@ -467,7 +504,7 @@ header {
       margin-top: 6px;
       margin-bottom: 16px;
       resize: vertical;
-      
+
       cursor: pointer;
     }
     ::placeholder {
@@ -486,14 +523,12 @@ header {
     input[type="submit"]:hover {
       opacity: 0.6;
     }
-
-    
   }
   footer {
     & > div {
       font-size: 20px;
       padding: 5px;
-      
+
       text-align: center;
       padding: 50px;
     }

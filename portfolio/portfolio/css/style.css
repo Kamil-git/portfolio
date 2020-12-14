@@ -302,6 +302,45 @@ header nav ul li:hover {
     justify-content: center;
   }
 }
+@media (min-width: 979px) {
+  #container #section2 .myskills {
+    height: calc(100vh - 100px);
+    font-size: 20px;
+    display: grid;
+    justify-content: center;
+    grid-column-gap: 15vh;
+    color: #6d4c41;
+  }
+  #container #section2 .myskills .h3 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #40241a;
+  }
+  #container #section2 .myskills .section_list {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #container #section2 .myskills .section_list1 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #container #section2 .myskills .section_list2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #container #section2 .myskills .section_list3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
 #container #section2 .big {
   font-size: 50px;
   color: #40241a;
