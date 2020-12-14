@@ -49,7 +49,7 @@ header {
   background: url(nav_wood.jpg);
   z-index: 1;
 
-  /* The progress container (grey background) */
+ 
 
   #logo {
     display: flex;
@@ -100,6 +100,9 @@ header {
         cursor: pointer;
       }
     }
+
+    
+  
     ul {
       list-style-type: none;
       display: flex;
@@ -112,6 +115,7 @@ header {
       text-transform: uppercase;
       color: @dark;
       font-weight: 600;
+      white-space: nowrap;
       p {
         display: none;
       }
@@ -161,7 +165,13 @@ header {
           cursor: pointer;
         }
       }
+      @media @tablet {
+      font-size: 20px;
     }
+    @media @laptop{
+    font-size:25px;
+    }
+  }
     @media @mobile {
       ul.open {
         transform: translateX(0) !important;
@@ -308,7 +318,17 @@ header {
         font-size: 15px;
         margin: 10px;
       }
+
+      @media @tablet{
+      display: flex;
+      flex-flow: column;
+      font-size: 25px;
+      margin: 10px;
+        text-align: center;
+        justify-content: center;
     }
+    }
+    
 
     .big {
       font-size: 50px;
@@ -431,9 +451,10 @@ header {
     justify-content: center;
     align-items: center;
     color: @dark;
-    margin: 10px;
+    margin: 0;
     font-size: 25px;
     border-color: @light;
+    width: 100%;
 
     input[type="text"],
     select,
@@ -466,17 +487,13 @@ header {
       opacity: 0.6;
     }
 
-    .container {
-      border-radius: 5px;
-
-      padding: 20px;
-    }
+    
   }
   footer {
     & > div {
       font-size: 20px;
       padding: 5px;
-      margin: 0 -10px;
+      
       text-align: center;
       padding: 50px;
     }

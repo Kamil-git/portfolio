@@ -23,7 +23,6 @@ header {
   top: 0;
   background: url(nav_wood.jpg);
   z-index: 1;
-  /* The progress container (grey background) */
 }
 header .scroll-indicator {
   position: fixed;
@@ -98,6 +97,7 @@ header nav ul {
   text-transform: uppercase;
   color: #40241a;
   font-weight: 600;
+  white-space: nowrap;
 }
 header nav ul p {
   display: none;
@@ -146,6 +146,16 @@ header nav ul li {
 header nav ul li:hover {
   opacity: 0.7;
   cursor: pointer;
+}
+@media (min-width: 757px) {
+  header nav ul {
+    font-size: 20px;
+  }
+}
+@media (min-width: 979px) {
+  header nav ul {
+    font-size: 25px;
+  }
 }
 @media (max-width: 757px) {
   header nav ul.open {
@@ -282,6 +292,16 @@ header nav ul li:hover {
     margin: 10px;
   }
 }
+@media (min-width: 757px) {
+  #container #section2 .myskills {
+    display: flex;
+    flex-flow: column;
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+}
 #container #section2 .big {
   font-size: 50px;
   color: #40241a;
@@ -395,9 +415,10 @@ header nav ul li:hover {
   justify-content: center;
   align-items: center;
   color: #40241a;
-  margin: 10px;
+  margin: 0;
   font-size: 25px;
   border-color: #9c786c;
+  width: 100%;
 }
 #container #section5 input[type="text"],
 #container #section5 select,
@@ -427,14 +448,9 @@ header nav ul li:hover {
 #container #section5 input[type="submit"]:hover {
   opacity: 0.6;
 }
-#container #section5 .container {
-  border-radius: 5px;
-  padding: 20px;
-}
 #container footer > div {
   font-size: 20px;
   padding: 5px;
-  margin: 0 -10px;
   text-align: center;
   padding: 50px;
 }
