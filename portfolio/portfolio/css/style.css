@@ -234,15 +234,15 @@ header nav ul li:hover {
   text-decoration: none;
   color: #66fcf1;
 }
-@media (max-width: 757px) {
+@media (max-width: 757px), (min-width: 757px) {
   #container #section1 h1 {
     margin: 0;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
     color: #66fcf1;
   }
   #container #section1 h2 {
-    font-size: 30px;
+    font-size: 25px;
     padding: 5px;
     text-align: center;
     color: #66fcf1;
@@ -258,6 +258,14 @@ header nav ul li:hover {
 }
 #section2 .section_header span {
   color: #66fcf1;
+}
+@media (max-width: 757px), (min-width: 757px) {
+  #section2 .section_header .big {
+    font-size: 40px;
+  }
+  #section2 .section_header .small {
+    font-size: 20px;
+  }
 }
 #section2 .myskills {
   height: calc(100vh - 100px);
@@ -282,6 +290,20 @@ header nav ul li:hover {
   font-size: 50px;
   font-weight: 700;
   color: #66fcf1;
+}
+@media (max-width: 757px), (min-width: 757px) {
+  #section2 .myskills .section_list .h3,
+  #section2 .myskills .section_list1 .h3,
+  #section2 .myskills .section_list2 .h3,
+  #section2 .myskills .section_list3 .h3 {
+    font-size: 30px;
+  }
+  #section2 .myskills .section_list li,
+  #section2 .myskills .section_list1 li,
+  #section2 .myskills .section_list2 li,
+  #section2 .myskills .section_list3 li {
+    font-size: 15px;
+  }
 }
 #section2 .myskills .section_list {
   grid-column-start: 1;
@@ -319,7 +341,7 @@ header nav ul li:hover {
   #section2 .myskills {
     display: flex;
     flex-flow: column;
-    font-size: 25px;
+    font-size: 15px;
     margin: 10px;
     text-align: center;
     justify-content: center;
@@ -433,6 +455,11 @@ header nav ul li:hover {
   font-size: 40px;
   color: #66fcf1;
   font-weight: 700;
+}
+@media (max-width: 757px), (min-width: 757px) {
+  #section3 .section_header .projects-titles {
+    font-size: 20px;
+  }
 }
 @media (max-width: 757px) {
   #section3 .section_header > span {
