@@ -510,7 +510,7 @@ header nav ul li:hover {
   width: 100%;
 }
 #section5 input[type="text"],
-#section5 select,
+#section5 input[type="email"],
 #section5 textarea {
   width: 100%;
   padding: 12px;
@@ -545,7 +545,7 @@ footer > div {
 }
 footer .section_footer {
   background: #0b0c10;
-  color: #66fcf1;
+  color: #45a29e;
 }
 footer .copyrights {
   background: #1f2833;
