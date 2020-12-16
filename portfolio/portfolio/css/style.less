@@ -206,7 +206,6 @@ header {
   @media @tablet, @mobile {
     margin-left: 4px;
     margin-right: 4px;
-    
   }
 
   #section1 {
@@ -234,7 +233,7 @@ header {
       display: flex;
       width: 200px;
       align-items: center;
-      
+
       border: none;
       background-color: @dark;
       padding: 14px 28px;
@@ -247,12 +246,12 @@ header {
         opacity: 0.5;
         color: #fff;
       }
-      :link{
+      :link {
         text-decoration: none;
         color: @lightgreen;
       }
     }
-    @media @mobile , @tablet {
+    @media @mobile, @tablet {
       h1 {
         margin: 0;
         font-size: 50px;
@@ -279,8 +278,8 @@ header {
     span {
       color: @lightgreen;
     }
-    @media @mobile , @tablet {
-      .big{
+    @media @mobile, @tablet {
+      .big {
         font-size: 40px;
       }
       .small {
@@ -311,12 +310,21 @@ header {
         font-weight: 700;
         color: @lightgreen;
       }
-      @media @mobile , @tablet {
-        .h3 {font-size: 30px;
-        
+     
+      @media @mobile, @tablet {
+        .h3 {
+          font-size: 30px;
         }
         li {
           font-size: 15px;
+        }
+      }
+       @media @laptop {
+        .h3 {
+          font-size: 40px ;
+        }
+        li {
+          font-size: 20px ;
         }
       }
     }
@@ -372,8 +380,6 @@ header {
         font-size: 50px;
         font-weight: 700;
         color: @green;
-
-       
       }
 
       .section_list {
@@ -438,7 +444,6 @@ header {
     .projects-icon {
       color: @lightgreen;
     }
-   
   }
   .section_header {
     height: calc(100vh - 100px);
@@ -477,7 +482,7 @@ header {
       font-size: 40px;
       color: @lightgreen;
       font-weight: 700;
-      @media @mobile , @tablet{
+      @media @mobile, @tablet {
         font-size: 20px;
       }
     }
@@ -563,7 +568,6 @@ header {
   input[type="submit"]:hover {
     opacity: 0.6;
   }
-
 }
 footer {
   & > div {

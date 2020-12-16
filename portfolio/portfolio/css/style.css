@@ -305,6 +305,20 @@ header nav ul li:hover {
     font-size: 15px;
   }
 }
+@media (min-width: 979px) {
+  #section2 .myskills .section_list .h3,
+  #section2 .myskills .section_list1 .h3,
+  #section2 .myskills .section_list2 .h3,
+  #section2 .myskills .section_list3 .h3 {
+    font-size: 40px ;
+  }
+  #section2 .myskills .section_list li,
+  #section2 .myskills .section_list1 li,
+  #section2 .myskills .section_list2 li,
+  #section2 .myskills .section_list3 li {
+    font-size: 20px ;
+  }
+}
 #section2 .myskills .section_list {
   grid-column-start: 1;
   grid-column-end: 2;
